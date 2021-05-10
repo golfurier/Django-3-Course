@@ -1,0 +1,21 @@
+## setup
+pip install django
+pip install pillow django-crispy-forms matplotlib seaborn pandas xhtml2pdf
+pip freeze
+pip freeze > requirements.txt
+pip install -r requirements.txt  # install to other venv
+
+##command
+django-admin startproject reports_proj
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py startapp sales
+python manage.py startapp reports
+python manage.py startapp profiles
+python manage.py startapp products
+python manage.py startapp customers
+
+python manage.py runserver
+
+python manage.py makemigrations
+python manage.py migrate
